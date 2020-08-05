@@ -19,7 +19,7 @@ describe('LandingPageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create and so...', () => {
     expect(component).toBeTruthy();
   });
 });
