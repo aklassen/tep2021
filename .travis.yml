@@ -10,8 +10,17 @@ branches:
     - master
 before_script:
   - npm install -g @angular/cli
-
-script:
-  - ng lint
-  - ng test ----source-map=false --browsers=ChromeHeadless --watch=false
-  - ng build --prod --aot
+- jobs:
+  include:
+    - stage: lint code
+        script:
+          - ng lint
+    - stage: unit tests
+        script:
+          - ng test ----source-map=false --browsers=ChromeHeadless --watch=false
+    - stage: e2e tests
+        script: echo todo add cypress
+    - stage: build
+        script:
+          - ng test ----source-map=false --browsers=ChromeHeadless --watch=false
+          - ng build --prod --aot
