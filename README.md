@@ -1,6 +1,7 @@
 # Our Tiny Event 2021
 
 [![Build Status](https://travis-ci.org/aklassen/tep2021.svg?branch=master)](https://travis-ci.org/aklassen/tep2021)
+[![build status](https://github.com/aklassen/tep2021/workflows/Build/badge.svg)](https://github.com/aklassen/tep2021/actions)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
