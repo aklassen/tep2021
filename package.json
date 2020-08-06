@@ -9,6 +9,7 @@
     "build:prod": "ng build --prod",
     "build:ci": "npm run clean && npm run test && npm run build:prod",
     "test": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "clean": "rimraf ./dist",
     "test:dev": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
